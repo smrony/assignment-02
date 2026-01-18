@@ -53,5 +53,113 @@ main {
   text-transform: capitalize;
   text-decoration: none;
   border-radius: 20px;
+  transition: all 1s ease-in-out;
   background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
 }
+.button:hover {
+  background: linear-gradient(45deg, #9100f8 0%, #fb09b4 51%, #f7e93f 100%);
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.flex-left-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.flex-right-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+.flex-vr {
+  display: flex;
+  flex-direction: column;
+}
+
+/* custome style  */
+
+/* navbar css start  */
+.navbar {
+  width: 100%;
+  padding: 15px 0px;
+}
+.nav-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.nav-brand {
+  width: 33.3%;
+}
+.nav-brand a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.nav-brand a span {
+  background: linear-gradient(360deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-menu {
+  width: 33.3%;
+}
+.nav-menu ul {
+  list-style: none;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+.nav-menu ul li a:hover {
+  color: #f7e93f;
+}
+.nav-button {
+  width: 33.3%;
+}
+/* navbar css end  */
+/* hero css start  */
+.section.cc-hero {
+  background-image: url(/assets/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 74px);
+}
+.container.cc-hero {
+  max-width: 550px;
+  text-align: center;
+  margin: 0px auto;
+}
+.hero-circle {
+  width: 350px;
+  height: 350px;
+  background-image: url(/assets/hero-circle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* hero css end  */
+
+/* footer css start  */
+footer {
+  background-image: url(/assets/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+/* footer css end */
