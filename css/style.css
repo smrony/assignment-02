@@ -6,14 +6,20 @@
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 15px;
+  line-height: 1.5;
   transition: all 0.5s ease-in-out;
 }
 main {
   background-color: #1a0b2e;
+}
+.bg-primary {
+  background-color: #1a0b2e;
+}
+.bg-secondary {
+  background-color: #230e3d;
 }
 .section {
   padding: 70px 0px;
@@ -52,18 +58,28 @@ main {
   color: #fff;
   text-transform: capitalize;
   text-decoration: none;
-  border-radius: 20px;
-  transition: all 1s ease-in-out;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
   background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
 }
 .button:hover {
   background: linear-gradient(45deg, #9100f8 0%, #fb09b4 51%, #f7e93f 100%);
 }
-
+.button.cc-transparent {
+  background: transparent;
+  border: 1px solid #00ff88;
+  color: #00ff88;
+}
+.button.cc-transparent:hover {
+  color: #fff;
+  border: 1px solid #ffffff;
+}
 .flex-space-between {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 .flex-left-center {
   display: flex;
@@ -86,8 +102,43 @@ main {
 .flex-vr {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
-
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+.card {
+  background-color: #351165;
+  padding: 40px;
+  border-radius: 40px;
+}
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: #fff;
+}
+.text-green {
+  color: #00ff88;
+}
+.paragraph {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.625;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
 /* custome style  */
 
 /* navbar css start  */
@@ -107,11 +158,21 @@ main {
   font-size: 32px;
   font-weight: bolder;
   text-decoration: none;
+  transition: 0.3s;
 }
 .nav-brand a span {
   background: linear-gradient(360deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.nav-brand a:hover {
+  background: linear-gradient(360deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-brand a:hover span {
+  color: #fff;
+  background: transparent;
 }
 .nav-menu {
   width: 33.3%;
@@ -152,8 +213,46 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero-title {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.hero-text {
+  font-size: 14px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
 /* hero css end  */
-
+/* about css start  */
+.counter {
+  font-size: 48px;
+}
+.counter-title {
+  text-transform: uppercase;
+}
+.card img {
+  padding-bottom: 10px;
+}
+.card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* about css end  */
 /* footer css start  */
 footer {
   background-image: url(/assets/footer-bg.png);
