@@ -342,3 +342,15 @@ footer {
   margin-left: 10px;
 }
 /* footer css end */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-circle {
+  animation: fadeIn 3s ease-in-out;
+}
