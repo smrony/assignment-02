@@ -215,7 +215,7 @@ main {
 /* navbar css end  */
 /* hero css start  */
 .section.cc-hero {
-  background-image: url(/assets/hero-bg.png);
+  background-image: url(../assets/hero-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,7 +229,7 @@ main {
 .hero-circle {
   width: 350px;
   height: 350px;
-  background-image: url(/assets/hero-circle.png);
+  background-image: url(../assets/hero-circle.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -308,7 +308,7 @@ main {
 }
 /* footer css start  */
 footer {
-  background-image: url(/assets/footer-bg.png);
+  background-image: url(../assets/footer-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
